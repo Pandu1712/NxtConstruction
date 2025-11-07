@@ -1,15 +1,18 @@
+import { useNavigate } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const images = [
-  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80",
-  "https://www.shutterstock.com/image-photo/modern-singlestory-house-minimalist-garden-260nw-2563059783.jpg",
-  "https://www.shutterstock.com/image-photo/modern-house-exterior-illuminated-facade-260nw-2560026799.jpg",
-  "https://ssl.cdn-redfin.com/photo/40/islphoto/679/genIslnoResize.25546679_2.jpg",
+  "https://res.cloudinary.com/dd4oiwnep/image/upload/v1762507796/Praneeth_pranav_flora-413_venkat_Reddy_sir_Final_3D_page-0006_yjknka.jpg",
+  "https://res.cloudinary.com/dd4oiwnep/image/upload/v1762507776/ram_sai_sir_final_designs_page-0021_s1ozjt.jpg",
+  "https://res.cloudinary.com/dd4oiwnep/image/upload/v1762507735/Rajesh_sir_3d_Designs_2__page-0010_ktwik9.jpg",
+  "https://res.cloudinary.com/dd4oiwnep/image/upload/v1762507695/Rajesh_sir_3d_Designs_2__page-0007_kprcgf.jpg",
 ];
 
 export default function Hero() {
+  const navigate = useNavigate(); // 👈 Hook for navigation
+
   const settings = {
     dots: false,
     infinite: true,
@@ -23,11 +26,11 @@ export default function Hero() {
   };
 
   return (
-    <div className="relative h-[90vh] w-full overflow-hidden">
-      {/* Background Carousel */}
+    <div className="relative w-full h-screen overflow-hidden">
+      {/* Slider */}
       <Slider {...settings} className="h-full">
         {images.map((src, index) => (
-          <div key={index} className="h-[90vh]">
+          <div key={index} className="h-screen w-full">
             <img
               src={src}
               alt={`slide-${index}`}
@@ -46,7 +49,12 @@ export default function Hero() {
         <p className="text-gray-200 max-w-2xl text-lg md:text-xl">
           Building the future with innovation, smart design, and structural excellence.
         </p>
-        <button className="mt-6 bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-300">
+
+        {/* 👇 Button that navigates to gallery */}
+        <button
+          onClick={() => navigate("/gallery")}
+          className="mt-6 bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition-transform duration-300"
+        >
           Explore Our Projects
         </button>
       </div>

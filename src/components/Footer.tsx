@@ -44,16 +44,16 @@ export default function Footer() {
           </h3>
           <ul className="space-y-2 text-sm">
             <li className="flex items-center gap-2">
-              <MapPin size={16} className="text-yellow-400" />
-              <span>Hyderabad, Telangana, India</span>
+              <MapPin size={24} className="text-yellow-400" />
+              <span>Adilabad|Hyderabad|Nizamabad</span>
             </li>
             <li className="flex items-center gap-2">
               <Phone size={16} className="text-yellow-400" />
-              <span>+91 98765 43210</span>
+              <span>+91 94400 13224</span>
             </li>
             <li className="flex items-center gap-2">
               <Mail size={16} className="text-yellow-400" />
-              <span>info@nxtconstruction.com</span>
+              <span>anirudhkathuri@gmail.com</span>
             </li>
           </ul>
         </div>
@@ -76,11 +76,11 @@ export default function Footer() {
           </a>
         </div>
 
-        <p className="text-sm text-gray-500 text-center md:text-right">
+        {/* <p className="text-sm text-gray-500 text-center md:text-right">
           © {new Date().getFullYear()}{" "}
           <span className="text-yellow-400 font-semibold">Nxt-Construction</span>.  
           All rights reserved.
-        </p>
+        </p> */}
       </div>
     </footer>
   );

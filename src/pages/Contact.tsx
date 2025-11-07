@@ -20,27 +20,27 @@ export default function Contact() {
 
   const branches = [
     {
-      name: "NXT Constructions - Head Office",
+      name: "NXT Constructions - Regional Office",
       address:
-        "8-2-293/82/1/238, Road No 12, MLA Colony, Banjara Hills, Hyderabad, 500034.",
+        "Sai Baba Traders, Market Road 5-2, Opp: Nature Care International Crop Science Pvt Ltd, Besides, Bustand, Boath Buzurg, Telangana 504304-Adilabad",
       phone: "+91 94400 13224",
       mapSrc:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.424692363287!2d78.4237399!3d17.4227181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb97343a32db2f%3A0xa0288719d944dc2!2sBanjara%20Hills%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1699111500000!5m2!1sen!2sin",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.552489599591!2d78.3188345!3d19.3452158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd273878f859d7d%3A0x8fa2447dd59382a3!2sNXT%20CONSTRUCTIONS!5e0!3m2!1sen!2sin!4v1762509053895!5m2!1sen!2sin",
     },
     {
       name: "NXT Constructions - Operations Wing",
       address:
-        "Ground Floor, Magna Lake View Apartments, Hitex Road, Hyderabad, 500084.",
+        "C9HC+Q8V Hyderabad, Telangana.",
       phone: "+91 94400 13224",
       mapSrc:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.956485929135!2d78.3727574!3d17.4469779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93e62c56c1b5%3A0x2c93f7f15a6f004b!2sMagna%20Lake%20View%20Apartments!5e0!3m2!1sen!2sin!4v1699111800000!5m2!1sen!2sin",
+        "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3806.6312438819155!2d78.36823127516587!3d17.42947568346489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDI1JzQ2LjEiTiA3OMKwMjInMTQuOSJF!5e0!3m2!1sen!2sin!4v1762509247738!5m2!1sen!2sin" ,
     },
     {
-      name: "NXT Constructions - Regional Office",
-      address: "Plot No. 101, Gachibowli Main Road, Hyderabad, Telangana 500032.",
+      name: "NXT Constructions -  Office",
+      address: "Maruti Nagar Nizamabad, Telangana 503002.",
       phone: "+91 94400 13224",
       mapSrc:
-        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.283148138062!2d78.349799!3d17.4332766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93f6ef7e6e17%3A0xd18f1f78053a7598!2sGachibowli%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1699111900000!5m2!1sen!2sin",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7558.64055092212!2d78.12029444999999!3d18.694474000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcdc4b6ee7ea89b%3A0x811fa557e14a7bcc!2sMaruti%20Nagar%2C%20Nizamabad%2C%20Telangana%20503002!5e0!3m2!1sen!2sin!4v1762509395450!5m2!1sen!2sin",
     },
   ];
 
@@ -69,7 +69,7 @@ export default function Contact() {
     const { name, email, phone, service, message } = formData;
     const text = `👋 Hello, I am *${name}*\n📧 Email: ${email}\n📞 Phone: ${phone}\n🧱 Service Interested: ${service}\n💬 Message: ${message}`;
     const encoded = encodeURIComponent(text);
-    const whatsappUrl = `https://wa.me/916303130025?text=${encoded}`;
+    const whatsappUrl = `https://wa.me/919440013224?text=${encoded}`;
     window.open(whatsappUrl, "_blank");
   };
 
@@ -95,7 +95,7 @@ export default function Contact() {
             </div>
             <div>
               <h3 className="font-semibold text-lg">Phone Number</h3>
-              <p className="text-gray-600">+91 94400 13224</p>
+              <p className="text-gray-600">+91 9440013224</p>
             </div>
           </div>
 
@@ -105,7 +105,7 @@ export default function Contact() {
             </div>
             <div>
               <h3 className="font-semibold text-lg">Email Address</h3>
-              <p className="text-gray-600">info@nxtconstructions.co.in</p>
+              <p className="text-gray-600">anirudhkathuri@gmail.com</p>
             </div>
           </div>
 
@@ -116,7 +116,7 @@ export default function Contact() {
             <div>
               <h3 className="font-semibold text-lg">Corporate Office</h3>
               <p className="text-gray-600">
-                Banjara Hills, Hyderabad, Telangana, 500034
+                Adilabad|Hyderabad|Nizamabad-Telangana,
               </p>
             </div>
           </div>
