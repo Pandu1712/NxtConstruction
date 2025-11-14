@@ -1,4 +1,4 @@
-import { CheckCircle, Home, Clock, Shield, Ruler, Globe, Phone } from "lucide-react";
+import { CheckCircle, Home, Clock, Shield, Ruler, Globe, } from "lucide-react";
 
 export default function AboutUs() {
   return (
