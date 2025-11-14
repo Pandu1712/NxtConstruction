@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Service from "./pages/Service"
 import ScrollToTop from "../src/components/ScrollToTop";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
         </Routes>
       </div>
       <Footer />
+       <WhatsAppButton />
     </>
   );
 }
