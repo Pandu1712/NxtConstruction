@@ -26,7 +26,7 @@ export default function Gallery() {
   };
 
   return (
-    <section className="bg-gray-50 min-h-screen py-16 px-6">
+    <section className="-mt-10 bg-gray-50 min-h-screen py-16 px-6">
       {/* Section Header */}
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-3 tracking-tight">

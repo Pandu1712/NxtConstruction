@@ -124,26 +124,30 @@ export default function AboutUs() {
         </p>
       </div>
 
+    {/* Project Service Locations */}
+<div className="mt-16 text-center">
+  <h2 className="text-3xl font-bold text-gray-900 mb-6">
+    My Project Services In
+  </h2>
+
+  <div className="flex flex-wrap justify-center gap-4">
+    <span className="px-6 py-2 bg-gradient-to-r from-green-600 to-green-700 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition">
+      Hyderabad
+    </span>
+
+    <span className="px-6 py-2 bg-gradient-to-r from-green-600 to-green-700 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition">
+      Nizamabad
+    </span>
+
+    <span className="px-6 py-2 bg-gradient-to-r from-green-600 to-green-700 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition">
+      Adilabad
+    </span>
+  </div>
+</div>
+
+
       {/* Contact Info */}
-      <div className="text-center mt-16">
-        <p className="text-gray-700 text-lg mb-3">
-          🌎{" "}
-          <a
-            href="https://www.nxtconstructions.co.in"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-yellow-600 hover:underline font-semibold"
-          >
-            www.nxtconstructions.co.in
-          </a>
-        </p>
-        <p className="text-gray-700 text-lg flex justify-center items-center gap-2">
-          <Phone className="text-yellow-500" size={20} />{" "}
-          <a href="tel:9440013224" className="hover:underline font-semibold">
-            +91 94400 13224
-          </a>
-        </p>
-      </div>
+      
     </section>
   );
 }
