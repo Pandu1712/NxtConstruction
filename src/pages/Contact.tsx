@@ -6,6 +6,7 @@ export default function Contact() {
     name: "",
     email: "",
     phone: "",
+    area:"",
     service: "",
     message: "",
   });
@@ -66,8 +67,15 @@ export default function Contact() {
       return;
     }
 
-    const { name, email, phone, service, message } = formData;
-    const text = `👋 Hello, I am *${name}*\n📧 Email: ${email}\n📞 Phone: ${phone}\n🧱 Service Interested: ${service}\n💬 Message: ${message}`;
+    const { name, email, phone,area, service, message } = formData;
+  const text = 
+  `👋 Hello, I am *${name}*
+📧 Email: ${email}
+📞 Phone: ${phone}
+📍 Area: ${area}
+🧱 Service Interested: ${service}
+💬 Message: ${message}`;
+
     const encoded = encodeURIComponent(text);
     const whatsappUrl = `https://wa.me/919440013224?text=${encoded}`;
     window.open(whatsappUrl, "_blank");
@@ -153,6 +161,16 @@ export default function Contact() {
               value={formData.phone}
               onChange={handleChange}
               maxLength={10}
+              className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-yellow-400 outline-none"
+              required
+            />
+             <input
+              type="text"
+              name="area"
+              placeholder="Area Of Plot/Flat"
+              value={formData.area}
+              onChange={handleChange}
+             
               className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-yellow-400 outline-none"
               required
             />

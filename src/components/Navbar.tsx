@@ -31,7 +31,7 @@ export default function Navbar() {
             className="h-12 w-12 object-contain rounded-full shadow-md"
           />
           <h1 className="text-2xl font-bold tracking-wide">
-            Nxt<span className="text-yellow-400">-Construction</span>
+            Nxt<span className="text-yellow-400"> Constructions</span>
           </h1>
         </div>
 
