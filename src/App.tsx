@@ -7,10 +7,12 @@ import ProjectDetails from "./pages/ProjectDetails";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Service from "./pages/Service"
+import ScrollToTop from "../src/components/ScrollToTop";
 
 export default function App() {
   return (
     <>
+     <ScrollToTop />
       <Navbar />
       <div className="pt-20">
         <Routes>
